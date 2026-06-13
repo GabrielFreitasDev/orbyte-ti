@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Orbyte Tecnologia — Soluções completas em TI: desenvolvimento de software, cloud, segurança da informação, consultoria e suporte em Manaus, AM.">
+  <meta name="theme-color" content="#06090d">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Orbyte Tecnologia">
+  <meta property="og:description" content="Tecnologia que transforma negócios. Soluções completas em TI para empresas de todos os portes.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://orbytetecnologia.com">
+
+  <title>Orbyte Tecnologia — Soluções em TI</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Atmospheric layers -->
+<div class="layer-noise"  aria-hidden="true"></div>
+<div class="layer-grid"   aria-hidden="true"></div>
+
+<!-- ================================================
+     NAVIGATION
+     ================================================ -->
+<header>
+  <nav class="nav" role="navigation" aria-label="Principal">
+    <a href="#" class="nav-logo" aria-label="Orbyte Tecnologia — Início">
+      <!-- Hexagon logo mark -->
+      <svg class="logo-hex" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+        <polygon points="17,1 32,9.5 32,24.5 17,33 2,24.5 2,9.5"
+                 fill="none" stroke="rgba(0,200,255,0.22)" stroke-width="1"/>
+        <polygon points="17,6 27,12 27,22 17,28 7,22 7,12"
+                 fill="rgba(0,200,255,0.06)" stroke="rgba(0,200,255,0.45)" stroke-width="1"/>
+        <polygon points="17,11 22,14 22,20 17,23 12,20 12,14"
+                 fill="rgba(0,200,255,0.14)" stroke="#00c8ff" stroke-width="1.5"/>
+        <circle cx="17" cy="17" r="3" fill="#00c8ff"/>
+      </svg>
+      Orbyte<span class="dot">.</span>
+    </a>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#portfolio">Cases</a></li>
+      <li><a href="#contato" class="nav-cta">Fale Conosco</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+
+<!-- ================================================
+     HERO
+     ================================================ -->
+<main>
+<section id="inicio" aria-label="Apresentação">
+  <div class="hero">
+
+    <!-- Left — copy -->
+    <div class="hero-copy">
+      <div class="hero-eyebrow reveal">Soluções em Tecnologia</div>
+
+      <h1 class="hero-title reveal">
+        Tecnologia que<br>
+        <span class="hi">transforma</span><br>
+        <span class="ghost">negócios</span>
+      </h1>
+
+      <p class="hero-sub reveal">
+        Da infraestrutura ao software — entregamos soluções completas em TI para empresas que querem crescer com segurança, velocidade e eficiência.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#contato" class="btn btn-solid">
+          Iniciar projeto
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#servicos" class="btn btn-outline">Ver serviços</a>
+      </div>
+
+      <div class="hero-kpis reveal">
+        <div>
+          <div class="kpi-val">+200<em>_</em></div>
+          <div class="kpi-label">Projetos entregues</div>
+        </div>
+        <div>
+          <div class="kpi-val">98<em>%</em></div>
+          <div class="kpi-label">Satisfação de clientes</div>
+        </div>
+        <div>
+          <div class="kpi-val">10<em>+</em></div>
+          <div class="kpi-label">Anos de experiência</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right — animated visual -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="orbit-wrap">
+        <div class="orb orb-1"><div class="orb-node"></div></div>
+        <div class="orb orb-2"><div class="orb-node"></div></div>
+        <div class="orb orb-3"><div class="orb-node"></div></div>
+        <div class="core">
+          <div class="core-glow"></div>
+          <div class="core-hex"></div>
+          <span class="core-label">OB</span>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="mc-label">Uptime SLA</div>
+        <div class="mc-val c">99.98%</div>
+        <div class="mc-bar"><div class="mc-bar-fill" style="width:99%"></div></div>
+      </div>
+
+      <div class="metric-card">
+        <div class="mc-label">Deploy status</div>
+        <div class="mc-val g">● online</div>
+      </div>
+
+      <div class="metric-card">
+        <div class="mc-label">Response time</div>
+        <div class="mc-val a">42 ms</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================================================
+     SERVIÇOS
+     ================================================ -->
+<section id="servicos" aria-label="Nossos serviços">
+  <div class="section-inner">
+    <div class="section-cap">
+      <div class="cap-tag reveal">// O que fazemos</div>
+      <h2 class="cap-title reveal">Serviços completos em TI</h2>
+      <p class="cap-desc reveal">Cobrimos todo o ecossistema tecnológico da sua empresa, do planejamento estratégico à operação diária.</p>
+    </div>
+
+    <div class="svc-grid">
+
+      <!-- 01 -->
+      <article class="svc-card reveal">
+        <span class="svc-num">01 / 06</span>
+        <svg class="svc-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <rect x="6" y="10" width="36" height="28" rx="3"/>
+          <path d="M16 22l4 4-4 4M24 30h8"/><path d="M6 16h36"/>
+        </svg>
+        <h3 class="svc-title">Desenvolvimento de Software</h3>
+        <p class="svc-desc">Sistemas sob medida, aplicações web e mobile com foco em performance, escalabilidade e experiência do usuário.</p>
+        <div class="svc-pills">
+          <span class="pill">Web Apps</span>
+          <span class="pill">Mobile</span>
+          <span class="pill">APIs</span>
+          <span class="pill">SaaS</span>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="svc-card reveal">
+        <span class="svc-num">02 / 06</span>
+        <svg class="svc-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 20c0-6.627 5.373-12 12-12s12 5.373 12 12"/>
+          <rect x="6" y="28" width="36" height="14" rx="3"/>
+          <circle cx="16" cy="35" r="2"/><circle cx="24" cy="35" r="2"/><circle cx="32" cy="35" r="2"/>
+        </svg>
+        <h3 class="svc-title">Infraestrutura & Cloud</h3>
+        <p class="svc-desc">Migração, configuração e gerenciamento de ambientes em nuvem. AWS, Azure e GCP com alta disponibilidade.</p>
+        <div class="svc-pills">
+          <span class="pill">AWS</span>
+          <span class="pill">Azure</span>
+          <span class="pill">DevOps</span>
+          <span class="pill">Kubernetes</span>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="svc-card reveal">
+        <span class="svc-num">03 / 06</span>
+        <svg class="svc-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M24 6l16 9v18L24 42 8 33V15L24 6z"/>
+          <path d="M24 6v36M8 15l16 9 16-9"/>
+          <circle cx="24" cy="24" r="4"/>
+        </svg>
+        <h3 class="svc-title">Segurança da Informação</h3>
+        <p class="svc-desc">Diagnóstico, proteção e conformidade. Pentest, monitoramento 24/7 e políticas de segurança corporativa.</p>
+        <div class="svc-pills">
+          <span class="pill">Pentest</span>
+          <span class="pill">LGPD</span>
+          <span class="pill">SOC</span>
+          <span class="pill">Firewall</span>
+        </div>
+      </article>
+
+      <!-- 04 -->
+      <article class="svc-card reveal">
+        <span class="svc-num">04 / 06</span>
+        <svg class="svc-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <circle cx="24" cy="24" r="10"/>
+          <path d="M24 6v4M24 38v4M6 24h4M38 24h4"/>
+          <path d="M14 14l2.8 2.8M31.2 31.2L34 34M34 14l-2.8 2.8M16.8 31.2L14 34"/>
+        </svg>
+        <h3 class="svc-title">Consultoria em TI</h3>
+        <p class="svc-desc">Assessoria estratégica para transformação digital, governança de TI e planejamento tecnológico de longo prazo.</p>
+        <div class="svc-pills">
+          <span class="pill">ITIL</span>
+          <span class="pill">Governança</span>
+          <span class="pill">Processos</span>
+        </div>
+      </article>
+
+      <!-- 05 -->
+      <article class="svc-card reveal">
+        <span class="svc-num">05 / 06</span>
+        <svg class="svc-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <rect x="8" y="8" width="14" height="14" rx="2"/>
+          <rect x="26" y="8" width="14" height="14" rx="2"/>
+          <rect x="8" y="26" width="14" height="14" rx="2"/>
+          <path d="M26 33h8M30 29v8"/>
+        </svg>
+        <h3 class="svc-title">Suporte & TI Gerenciada</h3>
+        <p class="svc-desc">Help desk, manutenção preventiva, monitoramento de infraestrutura e suporte técnico especializado.</p>
+        <div class="svc-pills">
+          <span class="pill">Help Desk</span>
+          <span class="pill">MSP</span>
+          <span class="pill">N1 / N2 / N3</span>
+        </div>
+      </article>
+
+      <!-- 06 -->
+      <article class="svc-card reveal">
+        <span class="svc-num">06 / 06</span>
+        <svg class="svc-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M8 34V22l16-12 16 12v12"/>
+          <rect x="16" y="28" width="16" height="12" rx="1"/>
+          <circle cx="24" cy="34" r="2"/>
+          <path d="M24 8v8"/>
+        </svg>
+        <h3 class="svc-title">Redes & Conectividade</h3>
+        <p class="svc-desc">Projeto e implantação de redes corporativas, wi-fi empresarial, VPN, SD-WAN e cabeamento estruturado.</p>
+        <div class="svc-pills">
+          <span class="pill">VPN</span>
+          <span class="pill">SD-WAN</span>
+          <span class="pill">Wi-Fi 6</span>
+          <span class="pill">CFTV</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================================================
+     SOBRE NÓS
+     ================================================ -->
+<section id="sobre" class="sobre-section" aria-label="Sobre a Orbyte Tecnologia">
+  <div class="section-inner">
+    <div class="sobre-layout">
+
+      <!-- Terminal visual -->
+      <div class="reveal">
+        <div class="terminal" role="img" aria-label="Terminal mostrando dados da empresa">
+          <div class="term-bar">
+            <div class="tb r"></div>
+            <div class="tb y"></div>
+            <div class="tb g"></div>
+            <span class="term-name">orbyte@sistema ~ bash</span>
+          </div>
+          <div class="term-body">
+            <div><span class="tp">orbyte@tech</span><span class="tc"> ~$</span> <span class="tn">whoami</span></div>
+            <div><span class="ts">Orbyte Tecnologia — Manaus, AM</span></div>
+            <br>
+            <div><span class="tp">orbyte@tech</span><span class="tc"> ~$</span> <span class="tn">cat perfil.json</span></div>
+            <div>{</div>
+            <div>&nbsp; <span class="tk">"missão"</span>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tv">"Transformar TI em resultado"</span>,</div>
+            <div>&nbsp; <span class="tk">"fundação"</span>:&nbsp;&nbsp;&nbsp;<span class="tv">"Manaus · AM · Brasil"</span>,</div>
+            <div>&nbsp; <span class="tk">"clientes"</span>:&nbsp;&nbsp;&nbsp;<span class="ts">200+</span>,</div>
+            <div>&nbsp; <span class="tk">"sla_uptime"</span>:&nbsp;&nbsp;<span class="ts">"99.98%"</span>,</div>
+            <div>&nbsp; <span class="tk">"suporte"</span>:&nbsp;&nbsp;&nbsp;&nbsp;<span class="ts">"24 / 7 / 365"</span>,</div>
+            <div>&nbsp; <span class="tk">"certificações"</span>: <span class="tv">["AWS","ITIL","ISO 27001"]</span></div>
+            <div>}</div>
+            <br>
+            <div><span class="tp">orbyte@tech</span><span class="tc"> ~$</span> <span class="cursor"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text content -->
+      <div>
+        <div class="sobre-tag reveal">
+          <span class="cap-tag">// Sobre nós</span>
+        </div>
+        <h2 class="sobre-title reveal">Especialistas em <em>tecnologia</em> para o seu negócio</h2>
+        <p class="sobre-body reveal">A Orbyte nasceu com a missão de democratizar o acesso a soluções de TI de alto nível para empresas de todos os portes. Combinamos expertise técnica com visão de negócio para entregar resultados que realmente importam.</p>
+        <p class="sobre-body reveal">Nossa equipe multidisciplinar atua como um verdadeiro setor de TI interno da sua empresa — com a flexibilidade e eficiência de quem vive de tecnologia.</p>
+
+        <div class="pillars">
+          <div class="pillar reveal">
+            <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <div class="pillar-text">
+              <strong>Compromisso com qualidade</strong>
+              Entrega de software testado, documentado e com suporte pós-deploy.
+            </div>
+          </div>
+          <div class="pillar reveal">
+            <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <div class="pillar-text">
+              <strong>Agilidade e prazo</strong>
+              Metodologias ágeis com ciclos curtos, entregas frequentes e total transparência.
+            </div>
+          </div>
+          <div class="pillar reveal">
+            <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <div class="pillar-text">
+              <strong>Parceria de longo prazo</strong>
+              Não somos fornecedores — somos o time de TI que a sua empresa precisa.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================================================
+     PORTFÓLIO / CASES
+     ================================================ -->
+<section id="portfolio" aria-label="Cases de sucesso">
+  <div class="section-inner">
+    <div class="section-cap">
+      <div class="cap-tag reveal">// Portfólio</div>
+      <h2 class="cap-title reveal">Cases de sucesso</h2>
+      <p class="cap-desc reveal">Projetos que mostram nossa capacidade de entregar soluções de impacto real para empresas de diferentes setores.</p>
+    </div>
+
+    <div class="port-grid">
+
+      <!-- Featured -->
+      <article class="case span2 reveal">
+        <div class="case-img">
+          <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.35" viewBox="0 0 640 320" fill="none" aria-hidden="true">
+            <rect x="40" y="30" width="560" height="260" rx="6" stroke="rgba(0,200,255,.25)" fill="rgba(0,200,255,.02)"/>
+            <rect x="60" y="50" width="180" height="110" rx="4" fill="rgba(0,200,255,.05)" stroke="rgba(0,200,255,.15)"/>
+            <rect x="260" y="50" width="140" height="50" rx="3" fill="rgba(57,255,176,.05)" stroke="rgba(57,255,176,.15)"/>
+            <rect x="260" y="110" width="140" height="50" rx="3" fill="rgba(255,171,48,.05)" stroke="rgba(255,171,48,.15)"/>
+            <rect x="420" y="50" width="160" height="110" rx="4" fill="rgba(0,200,255,.04)" stroke="rgba(0,200,255,.10)"/>
+            <line x1="60" y1="185" x2="580" y2="185" stroke="rgba(0,200,255,.08)"/>
+            <polyline points="70,280 160,250 250,265 340,230 430,248 510,218 580,228" stroke="#00c8ff" stroke-width="1.5" fill="none" opacity=".6"/>
+            <polyline points="70,280 160,265 250,272 340,250 430,260 510,245 580,250" stroke="rgba(57,255,176,.4)" stroke-width="1" fill="none"/>
+          </svg>
+          <div class="case-badge">Destaque</div>
+        </div>
+        <div class="case-body">
+          <h3 class="case-title">Plataforma de Gestão Industrial</h3>
+          <p class="case-desc">ERP customizado com integração IoT para monitoramento em tempo real de linha de produção. Dashboard analítico com alertas automáticos e relatórios gerenciais integrados.</p>
+          <div class="case-kpis">
+            <div><div class="ck-val">40%</div><div class="ck-label">Redução de downtime</div></div>
+            <div><div class="ck-val">3×</div><div class="ck-label">Mais produtividade</div></div>
+            <div><div class="ck-val">R$2M</div><div class="ck-label">Economia anual</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case 2 -->
+      <article class="case reveal">
+        <div class="case-img" style="background: var(--ink-3);">
+          <svg style="width:72%;height:72%;opacity:.35" viewBox="0 0 300 200" fill="none" aria-hidden="true">
+            <rect x="20" y="20" width="120" height="160" rx="8" stroke="rgba(0,200,255,.4)" fill="rgba(0,200,255,.04)"/>
+            <rect x="30" y="30" width="100" height="60" rx="4" fill="rgba(0,200,255,.08)"/>
+            <rect x="30" y="100" width="44" height="10" rx="2" fill="rgba(0,200,255,.2)"/>
+            <rect x="30" y="115" width="70" height="8" rx="2" fill="rgba(255,255,255,.06)"/>
+            <rect x="160" y="20" width="120" height="70" rx="8" stroke="rgba(57,255,176,.3)" fill="rgba(57,255,176,.03)"/>
+            <rect x="160" y="100" width="120" height="80" rx="8" stroke="rgba(255,171,48,.3)" fill="rgba(255,171,48,.03)"/>
+          </svg>
+          <div class="case-badge">App Mobile</div>
+        </div>
+        <div class="case-body">
+          <h3 class="case-title">App de Delivery Regional</h3>
+          <p class="case-desc">Aplicativo iOS e Android com geolocalização, pagamentos integrados e painel de gestão para restaurantes parceiros.</p>
+          <div class="case-kpis">
+            <div><div class="ck-val">15k</div><div class="ck-label">Usuários ativos</div></div>
+            <div><div class="ck-val">4.8★</div><div class="ck-label">Avaliação nas lojas</div></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case 3 -->
+      <article class="case reveal">
+        <div class="case-img" style="background: var(--ink-3);">
+          <svg style="width:72%;height:72%;opacity:.35" viewBox="0 0 300 200" fill="none" aria-hidden="true">
+            <circle cx="150" cy="100" r="60" stroke="rgba(0,200,255,.3)" fill="none"/>
+            <circle cx="150" cy="100" r="38" stroke="rgba(0,200,255,.18)" fill="none"/>
+            <circle cx="150" cy="100" r="18" fill="rgba(0,200,255,.1)" stroke="rgba(0,200,255,.4)"/>
+            <path d="M90 60L60 40M210 60L240 40M90 140L60 160M210 140L240 160" stroke="rgba(0,200,255,.3)" stroke-width="1.5"/>
+            <circle cx="60"  cy="40"  r="8" fill="rgba(255,171,48,.3)"  stroke="rgba(255,171,48,.5)"/>
+            <circle cx="240" cy="40"  r="8" fill="rgba(57,255,176,.3)"  stroke="rgba(57,255,176,.5)"/>
+            <circle cx="60"  cy="160" r="8" fill="rgba(0,200,255,.3)"  stroke="rgba(0,200,255,.5)"/>
+            <circle cx="240" cy="160" r="8" fill="rgba(192,114,234,.3)" stroke="rgba(192,114,234,.5)"/>
+          </svg>
+          <div class="case-badge">Cloud</div>
+        </div>
+        <div class="case-body">
+          <h3 class="case-title">Migração Cloud — Rede Hospitalar</h3>
+          <p class="case-desc">Migração completa de datacenter local para cloud híbrida com zero interrupção de serviços críticos de saúde.</p>
+          <div class="case-kpis">
+            <div><div class="ck-val">99.9%</div><div class="ck-label">Disponibilidade</div></div>
+            <div><div class="ck-val">60%</div><div class="ck-label">Redução de custo</div></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ================================================
+     CONTATO
+     ================================================ -->
+<section id="contato" class="contact-section" aria-label="Contato">
+  <div class="section-inner">
+    <div class="contact-layout">
+
+      <!-- Info -->
+      <div>
+        <span class="cap-tag reveal">// Contato</span>
+        <h2 class="contact-title reveal">Vamos construir algo juntos?</h2>
+        <p class="contact-desc reveal">Conte-nos sobre o seu projeto ou desafio tecnológico. Nossa equipe retorna em até 24 horas.</p>
+
+        <div class="contact-items">
+          <div class="ci reveal">
+            <div class="ci-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="ci-label">Localização</div>
+              <div class="ci-value">Manaus, Amazonas — Brasil</div>
+            </div>
+          </div>
+
+          <div class="ci reveal">
+            <div class="ci-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <div class="ci-label">E-mail</div>
+              <div class="ci-value">contato@orbytetecnologia.com</div>
+            </div>
+          </div>
+
+          <div class="ci reveal">
+            <div class="ci-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="ci-label">WhatsApp</div>
+              <div class="ci-value">+55 (92) 9 9999-9999</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal">
+        <div class="form-card">
+          <div class="form-row">
+            <div class="fg">
+              <label for="inp-nome">Nome</label>
+              <input id="inp-nome" type="text" placeholder="Seu nome" autocomplete="name">
+            </div>
+            <div class="fg">
+              <label for="inp-empresa">Empresa</label>
+              <input id="inp-empresa" type="text" placeholder="Nome da empresa" autocomplete="organization">
+            </div>
+          </div>
+          <div class="fg">
+            <label for="inp-email">E-mail</label>
+            <input id="inp-email" type="email" placeholder="seu@email.com" autocomplete="email">
+          </div>
+          <div class="fg">
+            <label for="inp-servico">Serviço de interesse</label>
+            <select id="inp-servico">
+              <option value="" disabled selected>Selecione um serviço</option>
+              <option>Desenvolvimento de Software</option>
+              <option>Infraestrutura & Cloud</option>
+              <option>Segurança da Informação</option>
+              <option>Consultoria em TI</option>
+              <option>Suporte & TI Gerenciada</option>
+              <option>Redes & Conectividade</option>
+              <option>Outro</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="inp-msg">Mensagem</label>
+            <textarea id="inp-msg" placeholder="Descreva seu projeto ou necessidade..."></textarea>
+          </div>
+          <button class="btn-form" id="formSubmit" type="button">Enviar mensagem</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" aria-label="Orbyte Tecnologia">
+          <svg width="30" height="30" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+            <polygon points="17,1 32,9.5 32,24.5 17,33 2,24.5 2,9.5" fill="none" stroke="rgba(0,200,255,0.22)" stroke-width="1"/>
+            <polygon points="17,6 27,12 27,22 17,28 7,22 7,12" fill="rgba(0,200,255,0.06)" stroke="rgba(0,200,255,0.45)" stroke-width="1"/>
+            <polygon points="17,11 22,14 22,20 17,23 12,20 12,14" fill="rgba(0,200,255,0.14)" stroke="#00c8ff" stroke-width="1.5"/>
+            <circle cx="17" cy="17" r="3" fill="#00c8ff"/>
+          </svg>
+          Orbyte<span class="dot">.</span>
+        </a>
+        <p>Transformando tecnologia em resultado para empresas de todos os portes desde 2014.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Desenvolvimento</a></li>
+          <li><a href="#servicos">Cloud & Infra</a></li>
+          <li><a href="#servicos">Segurança</a></li>
+          <li><a href="#servicos">Consultoria</a></li>
+          <li><a href="#servicos">Suporte TI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#portfolio">Cases</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@orbytetecnologia.com">E-mail</a></li>
+          <li><a href="#contato">WhatsApp</a></li>
+          <li><a href="#">Manaus, AM</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Orbyte Tecnologia. Todos os direitos reservados.</span>
+      <span>Feito com ♥ em Manaus</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ================================================
+     SCROLL TO TOP
+     ================================================ -->
+<button id="scrollTop" aria-label="Voltar ao topo">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M18 15l-6-6-6 6"/>
+  </svg>
+</button>
+
+
+<!-- ================================================
+     WHATSAPP FLUTUANTE
+     Edite WA_NUMBER em main.js para o seu número
+     ================================================ -->
+<div class="wa-wrap" role="complementary" aria-label="Contato via WhatsApp">
+  <div id="waBubble" class="wa-bubble" role="status">
+    <button id="waClose" class="wa-x" aria-label="Fechar">×</button>
+    <strong>Olá! 👋 Podemos ajudar?</strong>
+    Fale agora com nossa equipe pelo WhatsApp.
+  </div>
+  <button id="waBtn" class="wa-btn" aria-label="Abrir WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M16 2C8.28 2 2 8.28 2 16c0 2.44.65 4.73 1.79 6.72L2 30l7.52-1.97A13.94 13.94 0 0 0 16 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.43 11.43 0 0 1-5.83-1.6l-.42-.25-4.33 1.14 1.15-4.2-.28-.44A11.46 11.46 0 0 1 4.5 16C4.5 9.6 9.6 4.5 16 4.5S27.5 9.6 27.5 16 22.4 27.5 16 27.5zm6.29-8.55c-.34-.17-2.02-1-2.34-1.11-.31-.1-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59H9.9c-.2 0-.51.07-.78.37-.27.3-1.02 1-1.02 2.44s1.04 2.83 1.19 3.03c.14.2 2.05 3.13 4.97 4.39.7.3 1.24.48 1.66.61.7.22 1.34.19 1.84.12.56-.08 1.73-.71 1.97-1.4.25-.68.25-1.27.18-1.4-.08-.12-.29-.19-.63-.36z"/>
+    </svg>
+  </button>
+</div>
+
+<!-- Script -->
+<script src="main.js"></script>
+</body>
+</html>
