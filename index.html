@@ -501,24 +501,24 @@
 
       <!-- Form -->
       <div class="reveal">
-        <div class="form-card">
+                <form action="https://formspree.io/f/mykabpzn" method="POST" class="form-card">
           <div class="form-row">
             <div class="fg">
               <label for="inp-nome">Nome</label>
-              <input id="inp-nome" type="text" placeholder="Seu nome" autocomplete="name">
+              <input id="inp-nome" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required>
             </div>
             <div class="fg">
               <label for="inp-empresa">Empresa</label>
-              <input id="inp-empresa" type="text" placeholder="Nome da empresa" autocomplete="organization">
+              <input id="inp-empresa" name="empresa" type="text" placeholder="Nome da empresa" autocomplete="organization">
             </div>
           </div>
           <div class="fg">
             <label for="inp-email">E-mail</label>
-            <input id="inp-email" type="email" placeholder="seu@email.com" autocomplete="email">
+            <input id="inp-email" name="email" type="email" placeholder="seu@email.com" autocomplete="email" required>
           </div>
           <div class="fg">
             <label for="inp-servico">Serviço de interesse</label>
-            <select id="inp-servico">
+            <select id="inp-servico" name="servico" required>
               <option value="" disabled selected>Selecione um serviço</option>
               <option>Desenvolvimento de Software</option>
               <option>Infraestrutura & Cloud</option>
@@ -531,10 +531,11 @@
           </div>
           <div class="fg">
             <label for="inp-msg">Mensagem</label>
-            <textarea id="inp-msg" placeholder="Descreva seu projeto ou necessidade..."></textarea>
+            <textarea id="inp-msg" name="mensagem" placeholder="Descreva seu projeto ou necessidade..." required></textarea>
           </div>
-          <button class="btn-form" id="formSubmit" type="button">Enviar mensagem</button>
-        </div>
+          <input type="hidden" name="_next" value="https://www.orbytetecnologia.com/">
+          <button class="btn-form" type="submit">Enviar mensagem</button>
+        </form>
       </div>
 
     </div>

@@ -88,25 +88,6 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  /* ──────────────────────────────────────────
-     CONTACT FORM — UX feedback
-  ────────────────────────────────────────── */
-  const formBtn = $('#formSubmit');
-
-  formBtn?.addEventListener('click', () => {
-    const label = formBtn.textContent;
-    formBtn.textContent = 'Mensagem enviada ✓';
-    formBtn.style.background = '#39ffb0';
-    formBtn.style.color = '#06090d';
-    formBtn.disabled = true;
-
-    setTimeout(() => {
-      formBtn.textContent = label;
-      formBtn.style.background = '';
-      formBtn.style.color = '';
-      formBtn.disabled = false;
-    }, 3200);
-  });
 
   /* ──────────────────────────────────────────
      WHATSAPP FLOAT
