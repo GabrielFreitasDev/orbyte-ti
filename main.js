@@ -88,6 +88,78 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
+    /* ──────────────────────────────────────────
+     CONTACT FORM — ENVIO SILENCIOSO (AJAX)
+  ────────────────────────────────────────── */
+    /* ──────────────────────────────────────────
+     CONTACT FORM — ENVIO SILENCIOSO (AJAX) + VALIDAÇÃO
+  ────────────────────────────────────────── */
+  const contactForm = $('.form-card');
+  const submitBtn = $('.btn-form');
+  const emailInput = $('#inp-email'); // Captura o campo de e-mail
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault(); // Impede o redirecionamento da página
+
+      // 1. Validação de E-mail Rigorosa
+      const emailValue = emailInput.value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Exige formato texto@texto.texto
+
+      if (!emailRegex.test(emailValue)) {
+        // Se falhar, mostra erro visual e barra o envio
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'E-mail inválido ✗';
+        submitBtn.style.background = '#ff4d6a'; // Vermelho do seu CSS
+        submitBtn.style.color = '#fff';
+        
+        setTimeout(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.style.background = '';
+          submitBtn.style.color = '';
+        }, 3000);
+        
+        return; // O comando "return" mata a execução aqui, nada é enviado.
+      }
+
+      // 2. Fluxo de envio normal (se o e-mail for válido)
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Enviando...';
+      submitBtn.disabled = true;
+
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          // Sucesso: Botão verde e limpa o formulário
+          submitBtn.textContent = 'Mensagem enviada ✓';
+          submitBtn.style.background = '#39ffb0';
+          submitBtn.style.color = '#06090d';
+          contactForm.reset(); 
+        } else {
+          submitBtn.textContent = 'Erro. Tente novamente.';
+          submitBtn.style.background = '#ffab30'; // Laranja
+        }
+      } catch (error) {
+        submitBtn.textContent = 'Erro de conexão.';
+        submitBtn.style.background = '#ff4d6a'; // Vermelho
+      }
+
+      // Restaura o botão ao estado original após 4 segundos
+      setTimeout(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.style.background = '';
+        submitBtn.style.color = '';
+        submitBtn.disabled = false;
+      }, 4000);
+    });
+  }
 
   /* ──────────────────────────────────────────
      WHATSAPP FLOAT
