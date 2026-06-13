@@ -8,7 +8,7 @@
   /* ──────────────────────────────────────────
      CONFIG — edite aqui
   ────────────────────────────────────────── */
-  const WA_NUMBER  = '5592999999999'; // 55 + DDD + número, sem espaços
+  const WA_NUMBER  = '5592981101510'; // 55 + DDD + número, sem espaços
   const WA_TEXT    = 'Olá! Vim pelo site da Orbyte Tecnologia e gostaria de saber mais sobre os serviços.';
 
   /* ──────────────────────────────────────────
